@@ -11,6 +11,25 @@ export const metadata: Metadata = {
   title: "Hello, I'm Penguin 🐧",
   description: "BLOCKCHAIN BUILDER | Accelerator.",
   generator: "v0.app",
+  
+  // Open Graph 추가
+  openGraph: {
+    title: "Hello, I'm Penguin 🐧",
+    description: "BLOCKCHAIN BUILDER | Accelerator.",
+    url: "https://www.web3-penguin.store/",
+    siteName: "Web3 Penguin",
+    images: [
+      {
+        url: "/OG.png",  // public/OG.png
+        width: 1200,
+        height: 630,
+        alt: "Penguin OG Image",
+      }
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  
   icons: {
     icon: [
       {
