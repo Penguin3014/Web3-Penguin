@@ -8,7 +8,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hello, I'm Penguin",
+  title: "Hello, I'm Penguin 🐧",
   description: "BLOCKCHAIN BUILDER | Accelerator.",
   generator: "v0.app",
   icons: {
