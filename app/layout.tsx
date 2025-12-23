@@ -8,8 +8,8 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "블록체인 플랫폼 - 차세대 분산 네트워크",
-  description: "빠르고 안전한 블록체인 인프라. 분산화된 미래를 위한 혁신적인 솔루션.",
+  title: "Hello, I'm Penguin",
+  description: "BLOCKCHAIN BUILDER | Accelerator.",
   generator: "v0.app",
   icons: {
     icon: [
