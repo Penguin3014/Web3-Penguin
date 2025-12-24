@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   // Open Graph 추가
   openGraph: {
     title: "Hello, I'm Penguin 🐧",
-    description: "BLOCKCHAIN BUILDER | Accelerator.",
+    description: "BLOCKCHAIN BUILDER | ACCELERATOR",
     url: "https://www.web3-penguin.store/",
     siteName: "Web3 Penguin",
     images: [
