@@ -48,8 +48,8 @@ export function Skills() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 glow-text">What this penguin ships</h2>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4 glow-text">What this penguin ships</h2>
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto px-2 md:px-6">
             A comprehensive skill set across Web3 product and tokenomics strategy, CEX/DEX listing and growth, DeFi · NFT · infra business design, and full‑cycle blockchain project execution.
           </p>
         </div>

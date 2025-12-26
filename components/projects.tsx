@@ -82,7 +82,7 @@ export function Projects() {
     return (
       <div
         key={index}
-        className="group relative bg-slate-900/60 backdrop-blur-sm border border-sky-500/20 rounded-lg p-5 hover:border-sky-400/40 hover:-translate-y-1 transition-all duration-300 glow-border"
+        className="group relative bg-slate-900/60 backdrop-blur-sm border border-sky-500/20 rounded-lg p-5 hover:border-sky-400/40 hover:-translate-y-1 transition-all duration-300 glow-border scale-95 md:scale-100 mx-auto md:mx-0"
       >
         {/* Category pill with icon */}
         <div className="flex items-center gap-2 mb-3">

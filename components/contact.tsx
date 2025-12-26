@@ -19,7 +19,7 @@ export function Contact() {
     }
   }
   return (
-    <section className="relative w-full py-24 bg-[#020617] overflow-hidden">
+    <section className="relative w-full min-h-[720px] md:min-h-0 pt-6 pb-40 md:pt-24 md:pb-24 bg-[#020617] overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div className="absolute inset-0 pixel-stars" />
 
@@ -41,22 +41,72 @@ export function Contact() {
         />
       </div>
 
-      <div className="container relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 md:pt-0">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-20 md:mb-12">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 glow-text">Work with Web3 Penguin</h2>
-          <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto px-2 md:px-8 mb-8 text-center">
             Available for full-time roles in Web3 Product Management, Tokenomics design, and Business Development. Also
             open to advisory positions and consulting engagements for blockchain projects.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          {/* Mobile buttons */}
+          <div className="block md:hidden mb-8">
+            <div className="flex flex-col gap-4">
+              {/* 1) Email – full width */}
+              <div>
+                <Button
+                  size="lg"
+                  onClick={handleCopyEmail}
+                  className="w-full bg-sky-500 hover:bg-sky-600 text-white border-2 border-sky-400 shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  Contact via Email
+                </Button>
+                {copied && (
+                  <p className="mt-2 text-xs text-emerald-400 font-mono text-center">
+                    Email Address Copied!
+                  </p>
+                )}
+              </div>
+
+              {/* 2) LinkedIn + Telegram side-by-side */}
+              <div className="flex flex-row gap-3 w-full">
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="w-1/2 border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
+                >
+                  <a href="https://www.linkedin.com/in/hamzzi/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-5 h-5 mr-2" />
+                    View LinkedIn
+                  </a>
+                </Button>
+
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="w-1/2 border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
+                >
+                  <a href="https://t.me/ugk_setsuka" target="_blank" rel="noopener noreferrer">
+                    <Send className="w-5 h-5 mr-2" />
+                    Chat on Telegram
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop buttons – horizontal layout */}
+          <div className="hidden md:flex md:flex-row md:justify-center md:items-center md:gap-6 mb-8">
             <div>
               <Button
                 size="lg"
                 onClick={handleCopyEmail}
-                className="bg-sky-500 hover:bg-sky-600 text-white border-2 border-sky-400 shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300"
+                className="md:w-auto bg-sky-500 hover:bg-sky-600 text-white border-2 border-sky-400 shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Contact via Email
@@ -72,7 +122,7 @@ export function Contact() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
+              className="md:w-auto border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
             >
               <a href="https://www.linkedin.com/in/hamzzi/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5 mr-2" />
@@ -84,7 +134,7 @@ export function Contact() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
+              className="md:w-auto border-2 border-sky-500/50 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400 transition-all duration-300 bg-transparent"
             >
               <a href="https://t.me/ugk_setsuka" target="_blank" rel="noopener noreferrer">
                 <Send className="w-5 h-5 mr-2" />
